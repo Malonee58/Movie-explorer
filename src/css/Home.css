@@ -1,3 +1,4 @@
+/* ===== Home Styles ===== */
 .home {
   padding: 2rem 0;
   width: 100%;
@@ -42,7 +43,7 @@
   background-color: #f40612;
 }
 
-
+/* Small screens for Home */
 @media (max-width: 639px) {
   .home {
     padding: 1rem 0;
@@ -50,14 +51,33 @@
 
   .search-form {
     margin-bottom: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
 
+/* ===== Movie Grid (for Home) ===== */
 .movies-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns desktop */
   padding: 1rem;
   width: 100%;
   box-sizing: border-box;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns tablet */
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns mobile */
+    gap: 0.75rem;
+    padding: 0.5rem;
+  }
 }

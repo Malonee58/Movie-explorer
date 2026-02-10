@@ -1,4 +1,4 @@
-/* Movie Card */
+/* ===== Movie Card ===== */
 .movie-card {
   position: relative;
   width: 100%;
@@ -9,6 +9,7 @@
   transition: transform 0.2s ease;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .movie-card:hover {
@@ -102,32 +103,32 @@
   color: #ffd700;
 }
 
-/* Movie Grid */
+/* ===== Movie Grid (for MovieCard, if used separately) ===== */
 .movies-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+  grid-template-columns: repeat(4, 1fr); /* 4 columns desktop */
   padding: 1rem;
 }
 
 /* Tablet */
 @media (max-width: 1024px) {
   .movies-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns tablet */
   }
 }
 
 /* Mobile */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .movies-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on phone */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns mobile */
     gap: 0.75rem;
     padding: 0.5rem;
   }
 
   .movie-card {
-    max-width: 100%; /* fills column width */
-    margin: 0 auto;  /* center card */
+    max-width: 100%;   /* fill column */
+    margin: 0 auto;
   }
 
   .movie-info h3 {
