@@ -1,0 +1,15 @@
+<svg
+  width="200"
+  height="200"
+  viewBox="0 0 200 200"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Black background -->
+  <rect width="200" height="200" fill="#000000" />
+
+  <!-- Blue M -->
+  <path
+    d="M40 160 V40 H70 L100 95 L130 40 H160 V160 H130 V90 L100 135 L70 90 V160 Z"
+    fill="#1E90FF"
+  />
+</svg>
