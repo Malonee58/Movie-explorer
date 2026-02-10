@@ -43,20 +43,7 @@
   background-color: #f40612;
 }
 
-/* Small screens for Home */
-@media (max-width: 639px) {
-  .home {
-    padding: 1rem 0;
-  }
-
-  .search-form {
-    margin-bottom: 1rem;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-}
-
-/* ===== Movie Grid (for Home) ===== */
+/* ===== Movie Grid (Home Page) ===== */
 .movies-grid {
   display: grid;
   gap: 1rem;
@@ -75,6 +62,16 @@
 
 /* Mobile */
 @media (max-width: 600px) {
+  .home {
+    padding: 1rem 0;
+  }
+
+  .search-form {
+    margin-bottom: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
   .movies-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns mobile */
     gap: 0.75rem;

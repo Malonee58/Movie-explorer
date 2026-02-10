@@ -103,8 +103,8 @@
   color: #ffd700;
 }
 
-/* ===== Movie Grid (for MovieCard, if used separately) ===== */
-.movies-grid {
+/* ===== Movie Grid (for MovieCard component) ===== */
+.movie-grid {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(4, 1fr); /* 4 columns desktop */
@@ -113,14 +113,14 @@
 
 /* Tablet */
 @media (max-width: 1024px) {
-  .movies-grid {
+  .movie-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns tablet */
   }
 }
 
 /* Mobile */
 @media (max-width: 600px) {
-  .movies-grid {
+  .movie-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns mobile */
     gap: 0.75rem;
     padding: 0.5rem;
@@ -131,22 +131,29 @@
     margin: 0 auto;
   }
 
+  /* Slightly shorter poster on mobile */
+  .movie-poster {
+    aspect-ratio: 3 / 4;  /* shorter than 2/3 */
+  }
+
+  /* Adjust mobile info text */
   .movie-info h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .movie-info .year,
   .movie-info .genre {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
   }
 
   .movie-info .rating {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
+  /* Adjust favorite button for mobile */
   .favorite-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
   }
 }
