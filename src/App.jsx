@@ -11,13 +11,7 @@ function App() {
 			<NavBar />
 			<main className="main-content">
 				<Routes>
-					{/* Default homepage */}
 					<Route path="/" element={<Home />} />
-
-					{/* Redirect /home to / if needed */}
-					<Route path="/home" element={<Navigate to="/" />} />
-
-					{/* Other routes */}
 					<Route path="/Favorites" element={<Favorites />} />
 				</Routes>
 			</main>
